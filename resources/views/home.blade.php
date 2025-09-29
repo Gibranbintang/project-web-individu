@@ -11,7 +11,7 @@
     <title>TI UNIMUS | Home</title>
   </head>
   <body>
-    <ul class="nav justify-content-center" style="backround-color: dark">
+    <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="/">home</a>
   </li>
