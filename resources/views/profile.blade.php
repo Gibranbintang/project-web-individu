@@ -31,9 +31,23 @@
         <div class="col-md-8">
           <div class="text-center mb-4">
             <h1>Gibran Bintang Hakim</h1>
-            <h2>NIM: 13242420006</h2>
+            
           </div>
           
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Biografi</h5>
+              <hr>
+              <p class="text-justify">
+                Saya adalah mahasiswa Teknologi Informasi dari fakultas Teknik dan Ilmu komputer di Universitas Muhammadiyah Semarang angkatan 2024. 
+                saya masih pemula dalam bidang pengembangan web dan teknologi informasi. 
+                Hobi saya adalah main game, mendengarkan musik, nonton film, dan sedikit membaca novel ringan
+                Saat ini sedang mendalami bahasa pemrograman seperti PHP, HTML, CSS, dan framework Laravel. 
+                saya akan terus dan terus belajar dan mengembangkan kemampuan dalam dunia digital untuk menujang karir kedepannya.
+              </p>
+            </div>
+          </div>
+
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Informasi Profil</h5>
@@ -53,12 +67,20 @@
                     <td>Teknologi Informasi</td>
                   </tr>
                   <tr>
+                    <td><strong>Fakultas</strong></td>
+                    <td>Fakultas Teknik dan Ilmu Komputer</td>
+                  </tr>  
+                  <tr>
                     <td><strong>Universitas</strong></td>
                     <td>Universitas Muhammadiyah Semarang</td>
                   </tr>
                   <tr>
                     <td><strong>Email</strong></td>
                     <td>gibranbintang2004@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nomor</strong></td>
+                    <td>08988119773</td>
                   </tr>
                   <tr>
                     <td><strong>Tahun Angkatan</strong></td>

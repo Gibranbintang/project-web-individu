@@ -25,6 +25,7 @@
     <a class="nav-link" href="kontak">Kontak</a>
   </li>
 </ul>
+<h1>ini page home</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
