@@ -1,5 +1,6 @@
 <?php
 
+use app\models\Berita;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Data berita (global, untuk menghindari duplikasi)
+
 Route::get('/', function () {
-    return view('home',[
+    return view('home', [
         "title" => "home",
     ]);
 });
@@ -28,36 +31,31 @@ Route::get('/profile', function () {
 });
 
 Route::get('/berita', function () {
-
-$data_berita = [
-    [
-        "judul" => "berita 1",
-        "penulis" => "Bintang",
-        "konten" => "Gempa ringan mengguncang Jawa Barat, warga segera dievakuasi ke tempat aman",
-    ],
-    [
-        "judul" => "berita 2",
-        "penulis" => "suroso",
-        "konten" => "Timnas U-23 berhasil lolos ke final setelah menang tipis lewat adu penalti.",
-    ],
-    [
-        "judul" => "berita 3",
-        "penulis" => "kafka",
-        "konten" => "Harga BBM turun serentak, masyarakat sambut gembira perubahan kebijakan pemerintah",
-    ],
-];
-
-
-
-    return view('berita',[
-        "title" => "berita",
-        "beritas" => $data_berita
-        
+    return view('berita', [
+        "title" => "Berita",
+        "beritas" => Berita::ambildata(),
     ]);
 });
+Route::get('/berita/{slug}', function ($slug) {
 
+
+    // $new_berita = [];
+
+    // foreach ($data_berita as $berita) {
+    //     if ($berita["slug"] === $slugp) {
+    //         $new_berita = $berita; // $berita isinya array = [ "judul", "slug", "penulis", "isi"]
+    //     }
+    // }
+
+
+
+    return view('singleberita', [
+        "title" => "Berita",
+        "new_berita" => Berita::caridata($slug),
+    ]);
+});
 Route::get('/kontak', function () {
-    return view('kontak',[
+    return view('kontak', [
         "title" => "kontak",
     ]);
 });
