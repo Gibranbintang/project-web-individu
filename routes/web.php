@@ -1,6 +1,6 @@
 <?php
 
-use app\models\Berita;
+use App\Models\Berita;
 use Illuminate\Support\Facades\Route;
 
 /*

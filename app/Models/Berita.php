@@ -9,22 +9,22 @@ class Berita extends Model
 {
     private static $data_berita = [
         [
-            "judul" => "Unjuk Rasa Tolak Kenaikan BBM di Depan Gedung DPR",
-            "slug" => "unjuk-rasa-tolak-kenaikan-bbm-di-depan-gedung-dpr",
-            "penulis" => "Raihan Az Dzaky",
-            "isi" => "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero molestias deleniti laboriosam, similique quod, amet aperiam vitae sint odio placeat, adipisci enim explicabo libero. A saepe mollitia ducimus aliquam?"
+            "judul" => " Info Gempa di indonesia",
+            "slug" => "info-gempa-di-indonesia",
+            "penulis" => "Gibran Bintanga",
+            "isi" => "Gempa ringan mengguncang Jawa Barat, warga segera dievakuasi ke tempat aman"
         ],
         [
-            "judul" => "Sejarah Singkat Pendidikan di Indonesia",
-            "slug" => "sejarah-singkat-pendidikan-di-indonesia",
-            "penulis" => "Aditama",
-            "isi" => "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero molestias deleniti laboriosam, similique quod, amet aperiam vitae sint odio placeat, adipisci enim explicabo libero. A saepe mollitia ducimus aliquam?"
+            "judul" => "Ukiran Sejarah Bola Indonesia",
+            "slug" => "ukiran-sejarah-bola-indonesia",
+            "penulis" => "suroso",
+            "isi" => "Timnas U-23 berhasil lolos ke final setelah menang tipis lewat adu penalti."
         ],
         [
-            "judul" => "Sopo Jarwo: Serial Animasi Favorit Anak-anak",
-            "slug" => "sopo-jarwo-serial-animasi-favorit-anak-anak",
-            "penulis" => "Sopo jarwo",
-            "isi" => "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero molestias deleniti laboriosam, similique quod, amet aperiam vitae sint odio placeat, adipisci enim explicabo libero. A saepe mollitia ducimus aliquam?"
+            "judul" => "Kabar Bensin terbaru",
+            "slug" => "kabar-bensin-terbaru",
+            "penulis" => "Kafka",
+            "isi" => "Harga BBM turun serentak, masyarakat sambut gembira perubahan kebijakan pemerintah"
         ]
     ];
 
