@@ -24,6 +24,9 @@
   <li class="nav-item">
     <a class="nav-link" href="kontak">Kontak</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="gibranbin">mahasiswa</a>
+  </li>
 </ul>
 <div class="container">
     @yield('content')

@@ -36,6 +36,12 @@ Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita/{slug}', [BeritaController::class, 'tampildata']);
 
 Route::get('/gibranbin', [MahasiswaController::class, 'index']);
+Route::get('/gibranbin', function () {
+    return view('mahasiswa', [
+        "title" => "Data Mahasiswa",
+        "nama" => "Gibran Bintang"
+    ]);
+});
 
 Route::get('/kontak', function () {
     return view('kontak', [

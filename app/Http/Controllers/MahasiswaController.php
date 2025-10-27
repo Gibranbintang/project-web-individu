@@ -8,8 +8,6 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        return view ('/,mahasiswa', [
-            "title" => "Data Mahasiswa",
-        ]);
+        return view('mahasiswa'); // PASTIKAN tidak ada titik di depan
     }
 }
