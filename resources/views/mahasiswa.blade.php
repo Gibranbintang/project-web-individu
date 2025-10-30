@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>data mahasiswa</title>
 
 </head>
@@ -24,7 +28,8 @@
     <a class="nav-link" href="/gibranbin">mahasiswa</a>
   </li>
 </ul>
-    <button type="button" class="btn btn-success">Success</button>
+    <h href="tambahmahasiswa">
+    <button type="button" class="btn btn-success">tambah data</button>
     <table class="table">
   <thead>
     <tr>
@@ -40,24 +45,26 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
+      <td>Gibran Bintang</td>
+      <td>13242420006</td>
+      <td>S1 Teknologi Informasi</td>
+      <td>gibranbintang@gmail.com</td>
+      <td>08988119789</td>
       <td>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-primary">tambah</button>
+        <button type="button" class="btn btn-danger">hapus</button>
+      </td>
+    </tr>
+<tr>
+      <th scope="row">1</th>
+      <td>dazai osamu</td>
+      <td>13242420000</td>
+      <td>S1 Teknologi Informasi</td>
+      <td>dazaiagency@gmail.com</td>
+      <td>089866556</td>
+      <td>
+        <button type="button" class="btn btn-primary">tambah</button>
+        <button type="button" class="btn btn-danger">hapus</button>
       </td>
     </tr>
   </tbody>

@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MahasiswaController extends Controller
 {
     public function index()
     {
-        return view('mahasiswa'); // PASTIKAN tidak ada titik di depan
+        $mahasiswas = DB::table('mahasiswas')->get();
+        
+        return view('mahasiswa', compact('mahasiswas'));
     }
 }

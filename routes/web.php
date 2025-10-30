@@ -43,6 +43,7 @@ Route::get('/gibranbin', function () {
     ]);
 });
 
+Route::get('/tambahmahasiswa', [MahasiswaController::class, 'index']);
 Route::get('/kontak', function () {
     return view('kontak', [
         "title" => "kontak",
