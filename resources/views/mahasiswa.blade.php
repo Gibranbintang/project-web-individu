@@ -3,72 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <title>data mahasiswa</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Data Mahasiswa</title>
 </head>
 <body>
     <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link" href="/">home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/berita">Berita</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="/profile">profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/kontak">Kontak</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/gibranbin">mahasiswa</a>
-  </li>
-</ul>
-    <h href="tambahmahasiswa">
-    <button type="button" class="btn btn-success">tambah data</button>
-    <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">no</th>
-      <th scope="col">nama</th>
-      <th scope="col">nim</th>
-      <th scope="col">prodi</th>
-      <th scope="col">email</th>
-      <th scope="col">No. hp</th>
-      <th scope="col">aksi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Gibran Bintang</td>
-      <td>13242420006</td>
-      <td>S1 Teknologi Informasi</td>
-      <td>gibranbintang@gmail.com</td>
-      <td>08988119789</td>
-      <td>
-        <button type="button" class="btn btn-primary">tambah</button>
-        <button type="button" class="btn btn-danger">hapus</button>
-      </td>
-    </tr>
-<tr>
-      <th scope="row">1</th>
-      <td>dazai osamu</td>
-      <td>13242420000</td>
-      <td>S1 Teknologi Informasi</td>
-      <td>dazaiagency@gmail.com</td>
-      <td>089866556</td>
-      <td>
-        <button type="button" class="btn btn-primary">tambah</button>
-        <button type="button" class="btn btn-danger">hapus</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-    
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/berita">Berita</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/kontak">Kontak</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/gibranbin">Mahasiswa</a>
+        </li>
+    </ul>
+
+    <div class="container mt-4">
+        <h2>Data Mahasiswa</h2>
+        
+        <a href="tambahmahasiswa">
+            <button type="button" class="btn btn-success mb-3">Tambah Data</button>
+        </a>
+
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">NIM</th>
+                    <th scope="col">Prodi</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($mahasiswas as $index => $mhs)
+                <tr>
+                    <th scope="row">{{ $index + 1 }}</th>
+                    <td>{{ $mhs->name }}</td>
+                    <td>{{ $mhs->nim }}</td>
+                    <td>{{ $mhs->prodi }}</td>
+                    <td>{{ $mhs->email }}</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-warning">Edit</button>
+                        <button type="button" class="btn btn-sm btn-danger">Hapus</button>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
