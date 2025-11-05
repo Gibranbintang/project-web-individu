@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <title>Data Mahasiswa</title>
-</head>
+@extends('layouts.main')
+
+@section('content')
+  
+
+
+
+
 <body>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/berita">Berita</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/profile">Profile</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/kontak">Kontak</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="/gibranbin">Mahasiswa</a>
-        </li>
-    </ul>
+    
 
     <div class="container mt-4">
         <h2>Data Mahasiswa</h2>
@@ -61,4 +45,4 @@
         </table>
     </div>
 </body>
-</html>
+@endsection
