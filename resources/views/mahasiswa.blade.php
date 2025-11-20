@@ -36,7 +36,7 @@
                     <td>{{ $mhs->prodi }}</td>
                     <td>{{ $mhs->email }}</td>
                     <td>
-                        <button type="button" class="btn btn-sm btn-warning">Edit</button>
+                        <a href="tampildata/{{ $mhs ->id }}"class="btn btn-primary">Edit</a>
                         <button type="button" class="btn btn-sm btn-danger">Hapus</button>
                     </td>
                 </tr>
