@@ -46,6 +46,8 @@ Route::get('/tampildata/{id}', [MahasiswaController::class, 'tampildata'])->name
 
 Route::post('/editdata/{id}', [MahasiswaController::class, 'editdata'] )->name('editdata');
 
+Route::get('/deletedata/{id}', [MahasiswaController::class, 'deletedata'] )->name('deletedata');
+
 Route::get('/kontak', function () {
     return view('kontak', [
         "title" => "kontak",

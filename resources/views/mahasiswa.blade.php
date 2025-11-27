@@ -37,7 +37,8 @@
                     <td>{{ $mhs->email }}</td>
                     <td>
                         <a href="tampildata/{{ $mhs ->id }}"class="btn btn-primary">Edit</a>
-                        <button type="button" class="btn btn-sm btn-danger">Hapus</button>
+                        <a href="deletedata/{{ $mhs ->id }}"class="btn btn-danger" onclick="return confirm('yakin dihapus?')">Hapus</a>
+                        
                     </td>
                 </tr>
                 @endforeach
